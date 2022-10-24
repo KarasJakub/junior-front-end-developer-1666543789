@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const LegendWrapper = styled.div`
   width: 25rem;
+  max-height: 25rem;
   background-color: #cecece;
   display: flex;
   flex-direction: column;
