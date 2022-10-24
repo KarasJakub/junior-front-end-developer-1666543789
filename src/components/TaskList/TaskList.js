@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./TaskList.styled";
-import TaskCard from "./TaskCard/TaskCard";
+import TaskBar from "./TaskBar/TaskBar";
 
 export const TaskContent = [
   {
@@ -20,9 +20,10 @@ export const TaskContent = [
 const TaskList = () => {
   return (
     <S.TaskCardsWrapper>
-      {TaskContent.map((task) => (
-        <TaskCard title={task.title} description={task.description} />
-      ))}
+      <S.TitleWrapper>
+        <S.Title>YOUR TASKS</S.Title>
+      </S.TitleWrapper>
+      <TaskBar />
     </S.TaskCardsWrapper>
   );
 };

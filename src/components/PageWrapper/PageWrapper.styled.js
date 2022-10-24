@@ -6,7 +6,7 @@ export const PageWrapper = styled.section`
 `;
 
 export const ContentWrapper = styled.main`
-  width: 180rem;
+  width: 90%;
+  height: 80vh;
   margin: 5vh auto;
-  background-color: gray;
 `;
