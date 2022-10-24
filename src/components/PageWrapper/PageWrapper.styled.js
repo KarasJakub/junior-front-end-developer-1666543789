@@ -10,6 +10,7 @@ export const PageWrapper = styled.section`
 export const ContentWrapper = styled.main`
   width: 90%;
   height: 80vh;
+  max-height: 90rem;
   margin: 5vh auto;
   display: flex;
   justify-content: space-between;
