@@ -5,7 +5,6 @@ export const TaskCardWrapper = styled.div`
   margin: 2rem auto;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0px 12px 24px -11px rgba(66, 68, 90, 1);
 `;
 
 export const TopBar = styled.div`
