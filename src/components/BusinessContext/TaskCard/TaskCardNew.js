@@ -1,14 +1,13 @@
 import React from "react";
-import * as S from "./TaskCard.styled";
+import * as S from "./TaskCardNew.styled";
 
-const TaskCard = (props) => {
+const TaskCardNew = (props) => {
   const daysBetween = new Date().getDate() - new Date("2021-12-17").getDate();
-
   return (
     <S.TaskCardWrapper {...props}>
       <S.TopBar>
         <S.BarText>
-          {" "}
+          <div className="new">NEW</div>
           {props.author}
           {daysBetween + " days ago"}
         </S.BarText>
@@ -19,4 +18,4 @@ const TaskCard = (props) => {
   );
 };
 
-export default TaskCard;
+export default TaskCardNew;

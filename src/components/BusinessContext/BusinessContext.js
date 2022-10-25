@@ -2,21 +2,40 @@ import React from "react";
 import * as S from "./BusinessContext.styled";
 import ContextLogo from "../../assets/icons/ContextLogo.svg";
 import Kristen_Anitson_Photo from "../../assets/images/Kristen_Aniston_Photo.png";
+import TaskCard from "./TaskCard/TaskCard";
+import TaskCardNew from "./TaskCard/TaskCardNew";
 
 const BusinessContext = () => {
+  const daysBetween = new Date().getDate() - new Date("2021-12-17").getDate();
   return (
     <S.ContextWrapper>
       <S.Banner>
         <img src={ContextLogo} alt="Business Context Logo" />
       </S.Banner>
       <S.MainContentWrapper>
-        <S.TaskListWrapper></S.TaskListWrapper>
+        <S.TaskListWrapper>
+          <TaskCardNew
+            author="Olga Nelson   •   "
+            title="New sprint, tasks and intro information."
+            shortText="Hi Eric, congratulations on completing the previous assignment. This time you will have to focus on..."
+          />
+          <TaskCard
+            author="Kirsten Aniston   •   "
+            title="Application has been accepted 🎉 🙌"
+            shortText="Hi Eric, congratulations on completing the previous assignment. This time you will have to focus on..."
+          />
+          <S.TaskCardCompleted
+            author="Olga Nelson   •   "
+            title="New sprint, tasks and intro information."
+            shortText="Hi Eric, congratulations on completing the previous assignment. This time you will have to focus on..."
+          />
+        </S.TaskListWrapper>
         <S.MessageSection>
           <S.MessageTitle>Application has been accepted 🎉 🙌</S.MessageTitle>
           <S.MessageAuthor>
             <img src={Kristen_Anitson_Photo} alt="Kristen Anitson" />
             <h4>Kristen Anitson</h4>
-            <p> • Today, 17th December • 11:20</p>
+            <p>{daysBetween} days ago</p>
           </S.MessageAuthor>
           <S.MessageContent>
             Hello! <br />

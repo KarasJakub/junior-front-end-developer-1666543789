@@ -18,6 +18,19 @@ export const BarText = styled.p`
   font-size: 1.2rem;
   margin: 1rem;
   color: #6b778c;
+  display: flex;
+  align-items: center;
+
+  & .new {
+    background-color: #0165ff;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: white;
+    padding: 7px;
+    font-size: 10px;
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
 `;
 
 export const Title = styled.h3`
@@ -25,4 +38,7 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   margin: 1rem;
   font-weight: 500;
+  color: #0165ff;
+  font-weight: 700;
+  line-height: 18px;
 `;

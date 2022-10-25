@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import TaskCard from "./TaskCard/TaskCard";
 
 export const ContextWrapper = styled.main`
   width: 100%;
@@ -31,7 +32,7 @@ export const MainContentWrapper = styled.section`
 
 export const TaskListWrapper = styled.div`
   width: 30%;
-  background-color: #cecece;
+  background-color: #f4f5f7;
   margin: 0 0 4px 4px;
   border-radius: 0 0 0 15px;
 `;
@@ -76,4 +77,9 @@ export const MessageContent = styled.p`
   line-height: 2.5rem;
   width: 80%;
   margin: -0.5rem 1rem 0 9rem;
+`;
+
+export const TaskCardCompleted = styled(TaskCard)`
+  background-color: unset;
+  box-shadow: unset;
 `;
