@@ -2,16 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import PageWrapper from "./components/PageWrapper/PageWrapper";
-import TaskList from "./components/TaskList/TaskList";
+
 import GlobalStyle from "./layout/GlobalStyles";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <PageWrapper>
-      <TaskList />
-    </PageWrapper>
+    <PageWrapper />
   </React.StrictMode>
 );
 

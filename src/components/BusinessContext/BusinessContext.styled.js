@@ -35,6 +35,10 @@ export const TaskListWrapper = styled.div`
   background-color: #f4f5f7;
   margin: 0 0 4px 4px;
   border-radius: 0 0 0 15px;
+
+  & Link {
+    text-decoration: none;
+  }
 `;
 
 export const MessageSection = styled.section`
