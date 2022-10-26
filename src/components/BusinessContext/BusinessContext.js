@@ -9,6 +9,10 @@ import TaskContentNew from "./TaskContents/TaskContentNew";
 import TaskContentCompleted from "./TaskContents/TaskContentCompleted";
 
 const BusinessContext = () => {
+  const [isClicked, setIsClicked] = React.useState(false);
+
+  const clickHandler = () => setIsClicked((clicked) => !clicked);
+
   return (
     <Router>
       <S.ContextWrapper>
@@ -19,6 +23,8 @@ const BusinessContext = () => {
           <S.TaskListWrapper>
             <Link to="new" style={{ textDecoration: "none" }}>
               <TaskCardNew
+                isClicked={isClicked}
+                onClick={clickHandler}
                 author="Olga Nelson   •   "
                 title="New super fancy title"
                 shortText="Why I have same photo as Kristen Aniston? Because we are clones, don't

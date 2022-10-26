@@ -37,7 +37,7 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   margin: 1rem;
   font-weight: 500;
-  color: #0165ff;
   font-weight: 700;
   line-height: 18px;
+  color: ${({ isClicked }) => (isClicked ? "black" : "#0165ff")};
 `;
