@@ -4,7 +4,6 @@ import ContextLogo from "../../assets/icons/ContextLogo.svg";
 import TaskCard from "./TaskCard/TaskCard";
 import TaskCardNew from "./TaskCard/TaskCardNew";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Test from "../Test";
 import TaskContentActive from "./TaskContents/TaskContentActive";
 import TaskContentNew from "./TaskContents/TaskContentNew";
 import TaskContentCompleted from "./TaskContents/TaskContentCompleted";
